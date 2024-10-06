@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: rgb(34, 35, 35);
+    /* padding: 0 20px; */
+}
+
+.container{
+    text-align: center;
+}
+
+.title{
+    margin: 50px 0 ;
+    font-size: 30px;
+    color: white;
+}
+
+.title span{
+    color: #26ffcb;
+}
+
+.restart button{
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: #1f3540;
+    color: #26ffcb;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.board{
+    width: 550px;
+    height: 50%;
+    margin: auto;
+    display: flex;
+}
+
+.boxes{
+    width: 180px;
+    height: 180px;
+    background: #1f3540;
+    border: 4px solid #0f1b21;
+    border-radius: 12px;
+    display: flex;
+    cursor: pointer;
+}
+
+.boxes img{
+    margin: 50px;
+}
+
+.title img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: -5px;
+}
+
+.stats{
+    margin-top: 20px;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+table {
+    width: 50%;
+    margin: auto;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 2px solid white;
+}
+th, td {
+    padding: 15px 30px 15px 10px;
+    font-size: 20px;
+    text-align: center;
+}
+th {
+    background-color: transparent;
+}
+
+
+.results{
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+}
+
+.playerX, .playerO,.drawRes{
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+.playerO{
+    background: #26ffcb;
+}
+
+.playerX{
+    background: #e1d52a;
+}
+
+.drawRes{
+    background: #f3f0ea;
+}
+
+@media (max-width: 500px){
+
+    body{
+        padding: 0 10px;
+    }
+
+    .title{
+        margin-right: -150px;
+        font-size: 40px;
+        margin-top: 90px;
+    }
+
+    .restart{
+        margin-right: -150px;
+    }
+
+    .restart button{
+        font-size: 30px;
+    }
+
+    .results{
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+}
+
